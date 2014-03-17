@@ -1,8 +1,8 @@
 # facet-liveview
 
-An example application which demonstrates liveview retrieving of Sony Remote Camera Control API Beta.
+An example application which demonstrates taking photos using Sony Remote Camera Control API Beta.
 
-This example uses [facet](https://github.com/hammartap/facet) for retrieve liveview from Sony camera, and [Quil](https://github.com/quil/quil) for visualisation.
+This example uses [facet](https://github.com/hammartap/facet) for taking and retrieve images from Sony camera, and [Quil](https://github.com/quil/quil) for visualisation.
 
 ## Usage
 1. Make sure your machine is connected Sony Camera via WiFi.
@@ -10,8 +10,8 @@ This example uses [facet](https://github.com/hammartap/facet) for retrieve livev
 3. Import the library and execute `(-main)`
 
 ```
-$ git clone https://github.com/hammartap/facet-liveview.git
-$ cd facet-liveview
+$ git clone https://github.com/hammartap/facet-photo.git
+$ cd facet-photo
 $ lein repl
 ```
 
@@ -21,17 +21,16 @@ $ lein repl
 (ns facet-liveview.core)
 
 ;; Import a library.
-(use 'facet-liveview.core)
+(use 'facet-photo.core)
 
 ;; Then, call main function.
 (-main)
 
 ;; Take a picture.
-;; This will returns a map which contains URL of a photo and API executed id.
-(takeAndFetchPicture)
+(shutter!)
 
 ;; Finish the window.
-(ql/sketch-close liveview)
+(close)
 ```
 
 ## License

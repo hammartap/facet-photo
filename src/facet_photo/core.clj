@@ -59,3 +59,8 @@
     :draw draw                           ;; Specify the draw fn
     :size [1440 1080])                     ;; You struggle to beat the golden ratio
   )
+
+
+(defn close
+  []
+  (ql/sketch-close photo))
