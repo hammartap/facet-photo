@@ -1,4 +1,4 @@
-# facet-liveview
+# facet-photo
 
 An example application which demonstrates taking photos using Sony Remote Camera Control API Beta.
 
